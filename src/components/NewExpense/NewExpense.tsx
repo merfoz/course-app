@@ -5,7 +5,7 @@ import ExpenseInterface from '../types/types'
 import ExpenseForm from "./ExpenseForm";
 
 const NewExpense = (props:{
-  onAddExpenseData:(expenseData:ExpenseInterface) =>void
+  onAddExpense:(expenseData:ExpenseInterface) =>void
 }) => {
 
 
@@ -14,7 +14,7 @@ const NewExpense = (props:{
        ...enteredExpenseData,
        id:Math.random().toString()
      }
-     props.onAddExpenseData(expenseData);
+     props.onAddExpense(expenseData);
     
    }
 
